@@ -1,0 +1,25 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // Simplified relative path
+    },
+    "strict": true, // Enable strict type-checking
+    "esModuleInterop": true, // Improve compatibility with ES modules
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing
+    "skipLibCheck": true, // Skip type checking for libraries in node_modules
+    "resolveJsonModule": true // Allow importing JSON files
+  }
+}
